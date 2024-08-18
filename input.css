@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
+
+  .mobile-navbar-inner-div{
+    @apply flex justify-between items-center space-x-5 space-x-reverse;
+  }
+
+  .mobile-menu-item{
+    @apply text-white font-bold text-xl  font-tajawal;
+  }
+
+  .tab-item{
+    @apply text-customBlue text-xl font-semibold md:text-xl w-40 md:font-bold;
+  }
+
+  .progress-node{
+    @apply w-10 h-10 flex items-center justify-center rounded-full; 
+  }
+
+  .progress-node-text{
+    @apply mt-2 text-xs md:text-sm font-semibold text-customBlue;
+  }
+
+  .segment-div{
+    @apply flex flex-col justify-between items-start font-tajawal mx-12 text-2xl text-customBlue;
+  }
+
+  .footer-div{
+    @apply flex flex-col space-y-2 justify-between items-start text-gray-500 font-bold font-tajawal;
+  }
+
+  .footer-socialmedia-div{
+    @apply flex justify-center items-center w-10 h-10 bg-white border rounded-full;
+  }
